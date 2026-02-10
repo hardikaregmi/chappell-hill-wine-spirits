@@ -1,44 +1,19 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const galleryImages = [
-  {
-    src: "https://images.unsplash.com/photo-1514361892635-6d3cddd36f24?auto=format&fit=crop&w=1600&q=80",
-    alt: "Warm backlit bottles arranged on a bar shelf",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1600&q=80",
-    alt: "Rows of wine bottles with glowing labels",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80",
-    alt: "Rustic bar scene with glassware and bottles",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1527169402691-feff5539e52c?auto=format&fit=crop&w=1600&q=80",
-    alt: "Whiskey bottles lined up on a wooden shelf",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1510626176961-4b37d6af6b25?auto=format&fit=crop&w=1600&q=80",
-    alt: "Close-up of premium liquor bottles and glass",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1457518919282-b199744eefd6?auto=format&fit=crop&w=1600&q=80",
-    alt: "Wine bottles stacked in a dimly lit cellar",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1519972064555-542444e71b0f?auto=format&fit=crop&w=1600&q=80",
-    alt: "Colorful cocktail bottles with neon highlights",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=1600&q=80",
-    alt: "Shelves of spirits with warm pendant lighting",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1471933311424-646960669fbc?auto=format&fit=crop&w=1600&q=80",
-    alt: "Bar cart with premium spirits and garnishes",
-  },
+  { src: "/photos/gallery-1.jpg", alt: "Gallery image 1" },
+  { src: "/photos/gallery-2.jpg", alt: "Gallery image 2" },
+  { src: "/photos/gallery-3.jpg", alt: "Gallery image 3" },
+  { src: "/photos/gallery-4.jpg", alt: "Gallery image 4" },
+  { src: "/photos/gallery-5.jpg", alt: "Gallery image 5" },
+  { src: "/photos/gallery-6.jpg", alt: "Gallery image 6" },
+  { src: "/photos/gallery-7.jpg", alt: "Gallery image 7" },
+  { src: "/photos/gallery-8.jpg", alt: "Gallery image 8" },
+  { src: "/photos/gallery-9.jpg", alt: "Gallery image 9" },
 ];
 
 const googleMapsUrl =
@@ -85,77 +60,62 @@ export default function Home() {
   }, [isLightboxOpen]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+    <div className="min-h-screen bg-[color:var(--bg)] text-[color:var(--text)]">
+      <header className="sticky top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--bg)]/90 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 via-rose-500 to-fuchsia-600 text-sm font-bold text-slate-900 shadow-lg">
-              CH
-            </div>
+            <img
+              src="/logo.png"
+              alt="Chappell Hill Wine & Spirits"
+              className="h-10 w-10 rounded-full object-cover shadow-sm transition animate-pulse"
+            />
             <div>
               <p className="text-lg font-semibold">
                 Chappell Hill Wine & Spirits
               </p>
-              <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+              <p className="mb-2 text-xs uppercase tracking-[0.15em] text-[color:var(--accent-hover)]">
                 Community Liquor Store
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-white/80">
-            <a className="transition hover:text-white" href="#photos">
-              Photos
-            </a>
-            <a className="transition hover:text-white" href="#location">
-              Location
-            </a>
-            <a className="transition hover:text-white" href="#hours">
+          <div className="flex flex-1 items-center justify-end gap-5 text-sm font-semibold tracking-[0.02em] text-[color:var(--text)]">
+            <a className="border-b border-transparent transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]" href="#hours">
               Hours
             </a>
-            <a className="transition hover:text-white" href="#contact">
+            <a className="border-b border-transparent transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]" href="#contact">
               Contact
             </a>
           </div>
-          <a
-            className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/10"
-            href={googleMapsUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Get Directions
-          </a>
         </nav>
       </header>
 
       <main>
-        <section className="relative min-h-[70vh] overflow-hidden">
-          <img
-            src="/hero/hero-banner.png"
-            alt="Chappell Hill Wine & Spirits hero banner"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/10" />
-          <div className="relative mx-auto max-w-6xl px-6 lg:px-10">
-            <div className="flex min-h-[78vh] items-center pt-24 lg:pt-28">
-              <div className="max-w-xl">
-                <p className="mb-4 text-sm uppercase tracking-[0.5em] text-amber-400/70">
-                Petal, Mississippi
+        <section className="bg-[color:var(--bg)] py-16">
+          <div className="mx-auto max-w-6xl px-6 lg:px-10">
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
+              <div className="w-full max-w-2xl lg:max-w-[640px]">
+                <p className="mb-4 text-sm uppercase tracking-[0.15em] text-amber-700/60">
+                  PETAL, MISSISSIPPI
                 </p>
-                <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight text-yellow-200 md:text-6xl">
-                  Local picks. Premium pours.
+                <h1 className="text-4xl font-semibold leading-tight tracking-tight text-slate-800 md:text-6xl">
+                  <span className="block">Local favorites</span>
+                  <span className="block">Premium bottles</span>
                 </h1>
-                <p className="mt-5 text-lg leading-relaxed text-yellow-200/80">
-                  Your neighborhood wine & spirits shop in Petal—friendly help,
-                  great bottles, and weekend favorites.
+                <p className="mt-5 max-w-[58ch] text-lg font-medium leading-relaxed text-slate-600 md:leading-[1.7] lg:leading-[1.8]">
+                  Your neighborhood wine & spirits shop in Petal. From weeknight favorites to weekend picks, we’ll help you find the right bottle.
+                </p>
+                <p className="mt-5 max-w-[58ch] text-base font-medium leading-relaxed text-slate-600 md:leading-[1.7] lg:leading-[1.8]">
+                  We’re a locally owned shop focused on quality bottles, fair prices, and friendly recommendations. Whether you’re picking up something easy for the week or a special bottle to celebrate, we’re here to help you choose with confidence. Stop by anytime — good wine shouldn’t feel complicated.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
-                    className="rounded-full bg-amber-400 px-6 py-3 text-sm font-semibold text-yellow-200 shadow-lg transition hover:bg-amber-300"
-                    href="#photos"
+                    className="rounded-full bg-[color:var(--accent)] px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-[color:var(--accent-hover)]"
+                    href="#selection"
                   >
-                    View Photos
+                    Browse Selection
                   </a>
                   <a
-                    className="rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-yellow-200 transition hover:border-white/60 hover:bg-white/10"
+                    className="rounded-full border border-[color:var(--accent)] px-6 py-3 text-sm font-semibold text-[color:var(--accent)] transition hover:bg-[color:var(--accent)]/10"
                     href={googleMapsUrl}
                     target="_blank"
                     rel="noreferrer"
@@ -164,29 +124,185 @@ export default function Home() {
                   </a>
                 </div>
               </div>
+              <div className="mt-10 flex justify-center lg:mt-0 lg:w-[420px] lg:justify-self-end lg:pr-2 lg:pt-2 xl:w-[480px] xl:pr-6">
+                <Image
+                  src="/hero/hero.png"
+                  alt=""
+                  aria-hidden="true"
+                  width={520}
+                  height={520}
+                  sizes="(min-width: 1024px) 520px, 85vw"
+                  className="h-auto w-full max-w-[360px] object-contain mix-blend-multiply opacity-90 lg:max-w-none"
+                />
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="photos" className="bg-slate-900/60 py-20">
+        <section id="selection" className="bg-[color:var(--bg)] py-16">
           <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-white/50">
-                  Photo Gallery
+                <p className="mb-2 text-sm uppercase tracking-[0.15em] text-[color:var(--accent-hover)]">
+                  Browse Selection
                 </p>
-                <h2 className="mt-3 text-3xl font-semibold">
-                  A vibrant look inside the aisles.
-                </h2>
+                <h2 className="mt-2 text-3xl font-bold text-[color:var(--text)]"></h2>
               </div>
-              <p className="max-w-lg text-sm text-white/70">
-                Scroll through the bottles, tap the arrows to browse, and click
-                any image to open a full-screen view.
-              </p>
+              <p className="max-w-lg text-sm text-[color:var(--muted)]"></p>
             </div>
 
-            <div className="mt-10 space-y-6">
-              <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/70 shadow-2xl">
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              <div className="group relative rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)]">
+                <Link
+                  href="/liquor"
+                  className="absolute inset-0 rounded-3xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  aria-label="View all liquor"
+                />
+                <h3 className="relative z-10 text-2xl font-bold text-[color:var(--accent)]">
+                  Liquor
+                </h3>
+                <div className="relative z-10 mt-5 flex flex-wrap gap-2 text-[13px] text-[color:var(--muted)]">
+                  <Link
+                    href="/liquor/vodka"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Vodka
+                  </Link>
+                  <Link
+                    href="/liquor/whiskey"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Whiskey
+                  </Link>
+                  <Link
+                    href="/liquor/tequila"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Tequila
+                  </Link>
+                  <Link
+                    href="/liquor/rum"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Rum
+                  </Link>
+                  <Link
+                    href="/liquor/gin"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Gin
+                  </Link>
+                  <Link
+                    href="/liquor/brandy"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Brandy
+                  </Link>
+                </div>
+              </div>
+
+              <div className="group relative rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)]">
+                <Link
+                  href="/wine"
+                  className="absolute inset-0 rounded-3xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  aria-label="View all wine"
+                />
+                <h3 className="relative z-10 text-2xl font-bold text-[color:var(--accent)]">
+                  Wine
+                </h3>
+                <div className="relative z-10 mt-5 flex flex-wrap gap-2 text-[13px] text-[color:var(--muted)]">
+                  <Link
+                    href="/wine/cabernet-sauvignon"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Cabernet Sauvignon
+                  </Link>
+                  <Link
+                    href="/wine/merlot"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Merlot
+                  </Link>
+                  <Link
+                    href="/wine/pinot-noir"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Pinot Noir
+                  </Link>
+                  <Link
+                    href="/wine/pinot-grigio"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Pinot Grigio
+                  </Link>
+                  <Link
+                    href="/wine/moscato"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Moscato
+                  </Link>
+                  <Link
+                    href="/wine/chardonnay"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Chardonnay
+                  </Link>
+                  <Link
+                    href="/wine/sauvignon-blanc"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Sauvignon Blanc
+                  </Link>
+                  <Link
+                    href="/wine/riesling"
+                    className="rounded-full bg-[color:var(--border)]/40 px-2.5 py-1 transition hover:bg-[color:var(--border)]/70 hover:text-[color:var(--text)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+                  >
+                    Riesling
+                  </Link>
+                </div>
+              </div>
+
+              <Link
+                href="/champagne"
+                className="group rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+              >
+                <h3 className="text-2xl font-bold text-[color:var(--accent)]">
+                  Champagne
+                </h3>
+                <p className="mt-5 text-sm text-[color:var(--muted)]">
+                  Sparkling wines for celebrations and special moments.
+                </p>
+              </Link>
+
+              <Link
+                href="/margaritas"
+                className="group rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:-translate-y-0.5 hover:border-[color:var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--accent)]/40"
+              >
+                <h3 className="text-2xl font-bold text-[color:var(--accent)]">
+                  Margaritas
+                </h3>
+                <p className="mt-5 text-sm text-[color:var(--muted)]">
+                  Ready-to-drink margaritas and tequila-based favorites.
+                </p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section id="photos" className="bg-[color:var(--bg)] py-16">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="mb-2 text-sm uppercase tracking-[0.15em] text-[color:var(--accent-hover)]">
+                  Photo Gallery
+                </p>
+                <h2 className="mt-2 text-3xl font-bold text-[color:var(--text)]"></h2>
+              </div>
+              <p className="max-w-lg text-sm text-[color:var(--muted)]"></p>
+            </div>
+
+            <div className="mt-6 space-y-6">
+              <div className="relative overflow-hidden rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
                 <button
                   type="button"
                   className="group relative block w-full"
@@ -196,20 +312,20 @@ export default function Home() {
                   <img
                     src={activeImage.src}
                     alt={activeImage.alt}
-                    className="h-[420px] w-full object-cover transition duration-500 group-hover:scale-[1.02] md:h-[520px]"
+                    className="h-[420px] w-full object-contain transition duration-500 group-hover:scale-[1.02] md:h-[520px]"
                   />
                   <span className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent" />
                 </button>
-                <div className="absolute left-4 top-4 rounded-full bg-black/50 px-3 py-1 text-xs text-white/80 backdrop-blur">
+                <div className="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1 text-xs text-white/90 backdrop-blur">
                   {activeIndex + 1} / {galleryImages.length}
                 </div>
                 <div className="absolute inset-y-0 left-3 flex items-center">
-                  <button
-                    type="button"
-                    onClick={goPrev}
-                    className="rounded-full border border-white/20 bg-slate-950/60 p-2 text-white transition hover:border-white/60 hover:bg-slate-950"
-                    aria-label="Previous photo"
-                  >
+                <button
+                  type="button"
+                  onClick={goPrev}
+                    className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/80 p-2 text-[color:var(--text)] transition hover:border-[color:var(--accent)]/40 hover:bg-[color:var(--surface)]"
+                  aria-label="Previous photo"
+                >
                     <svg
                       className="h-5 w-5"
                       viewBox="0 0 20 20"
@@ -227,12 +343,12 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="absolute inset-y-0 right-3 flex items-center">
-                  <button
-                    type="button"
-                    onClick={goNext}
-                    className="rounded-full border border-white/20 bg-slate-950/60 p-2 text-white transition hover:border-white/60 hover:bg-slate-950"
-                    aria-label="Next photo"
-                  >
+                <button
+                  type="button"
+                  onClick={goNext}
+                    className="rounded-full border border-[color:var(--border)] bg-[color:var(--surface)]/80 p-2 text-[color:var(--text)] transition hover:border-[color:var(--accent)]/40 hover:bg-[color:var(--surface)]"
+                  aria-label="Next photo"
+                >
                     <svg
                       className="h-5 w-5"
                       viewBox="0 0 20 20"
@@ -259,8 +375,8 @@ export default function Home() {
                     onClick={() => setActiveIndex(index)}
                     className={`relative h-20 w-28 flex-shrink-0 overflow-hidden rounded-2xl border transition md:h-24 md:w-36 ${
                       index === activeIndex
-                        ? "border-amber-400 ring-2 ring-amber-400/60"
-                        : "border-white/10 opacity-70 hover:opacity-100"
+                        ? "border-[color:var(--accent)] ring-2 ring-[color:var(--accent)]/40"
+                        : "border-[color:var(--border)] opacity-70 hover:opacity-100"
                     }`}
                     aria-label={`View photo ${index + 1}`}
                     aria-current={index === activeIndex ? "true" : "false"}
@@ -277,102 +393,39 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="location" className="py-20">
+        <section id="contact" className="bg-[color:var(--bg)] py-16">
           <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col gap-4">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/50">
-                Location + Hours
-              </p>
-              <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-                <h2 className="text-3xl font-semibold">
-                  Visit Chappell Hill Wine & Spirits.
-                </h2>
-                <a
-                  className="inline-flex self-center rounded-full bg-amber-400 px-5 py-2 text-sm font-semibold text-slate-950 shadow transition hover:bg-amber-300 md:ml-auto md:self-auto"
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Get Directions
-                </a>
-              </div>
-              <p className="max-w-2xl text-sm text-white/70">
-                Drop by our Petal shop for a friendly recommendation, seasonal
-                picks, and the essentials you rely on every week.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-slate-900/60 p-8 shadow-lg">
-                <h3 className="text-xl font-semibold">Storefront</h3>
-                <a
-                  className="mt-4 inline-flex text-sm text-white/70 transition hover:text-amber-300"
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  101 Chappell Hill Road
-                  <br />
-                  Petal, MS 39465
-                </a>
-              </div>
-
-              <div
-                id="hours"
-                className="rounded-3xl border border-white/10 bg-slate-900/60 p-8 shadow-lg"
-              >
-                <h3 className="text-xl font-semibold">Hours</h3>
-                <div className="mt-4 space-y-3 text-sm text-white/70">
-                  <div className="flex items-center justify-between border-b border-white/10 pb-2">
-                    <span>Mon–Sat</span>
-                    <span className="font-semibold text-white">
-                      10:00 AM – 10:00 PM
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span>Sunday</span>
-                    <span className="font-semibold text-amber-300">Closed</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="bg-slate-900/70 py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col gap-4">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/50">
+              <p className="mb-2 text-sm uppercase tracking-[0.15em] text-[color:var(--accent-hover)]"></p>
+              <h2 className="mt-2 text-3xl font-bold text-[color:var(--accent)]">
                 Contact
-              </p>
-              <h2 className="text-3xl font-semibold">
-                Let us help you plan the perfect pour.
               </h2>
+              <p className="text-sm text-[color:var(--muted)]"></p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-                <p className="text-sm text-white/60">Phone</p>
+            <div className="mt-4 grid gap-6 md:grid-cols-3">
+              <div className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:border-[color:var(--accent)]/40">
+                <p className="text-sm text-[color:var(--muted)]">Phone</p>
                 <a
-                  className="mt-2 inline-flex text-lg font-semibold text-white transition hover:text-amber-300"
+                  className="mt-2 inline-flex text-lg font-semibold text-[color:var(--text)] transition hover:text-[color:var(--accent)]"
                   href="tel:3862929878"
                 >
                   3862929878
                 </a>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-                <p className="text-sm text-white/60">Email</p>
+              <div className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:border-[color:var(--accent)]/40">
+                <p className="text-sm text-[color:var(--muted)]">Email</p>
                 <a
-                  className="mt-2 inline-flex text-lg font-semibold text-white transition hover:text-amber-300"
+                  className="mt-2 inline-flex text-lg font-semibold text-[color:var(--text)] transition hover:text-[color:var(--accent)]"
                   href="mailto:winespirits30@gmail.com"
                 >
                   winespirits30@gmail.com
                 </a>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6">
-                <p className="text-sm text-white/60">Address</p>
+              <div className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:border-[color:var(--accent)]/40">
+                <p className="text-sm text-[color:var(--muted)]">Address</p>
                 <a
-                  className="mt-2 inline-flex text-lg font-semibold text-white transition hover:text-amber-300"
+                  className="mt-2 inline-flex text-lg font-semibold text-[color:var(--text)] transition hover:text-[color:var(--accent)]"
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noreferrer"
@@ -380,15 +433,43 @@ export default function Home() {
                   101 Chappell Hill Road, Petal, MS 39465
                 </a>
               </div>
+              <div
+                id="hours"
+                className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition hover:border-[color:var(--accent)]/40"
+              >
+                <p className="text-sm text-[color:var(--muted)]">Hours</p>
+                <div className="mt-4 space-y-3 text-sm text-[color:var(--muted)]">
+                  <div className="flex items-center justify-between border-b border-[color:var(--border)] pb-2">
+                    <span>Mon–Sat</span>
+                    <span className="font-semibold text-[color:var(--text)]">
+                      10:00 AM – 10:00 PM
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Sunday</span>
+                    <span className="font-semibold text-[color:var(--accent)]">
+                      Closed
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-slate-950 py-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 text-sm text-white/60 md:flex-row">
+      <footer className="border-t border-[color:var(--border)] bg-[color:var(--bg)] py-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 text-sm text-[color:var(--muted)] md:flex-row">
           <span>Chappell Hill Wine & Spirits</span>
           <span>Serving Petal with premium bottles and warm hospitality.</span>
+        </div>
+        <div className="mx-auto mt-3 flex max-w-6xl justify-center px-6 md:justify-end">
+          <a
+            href="/admin/login"
+            className="text-xs text-[color:var(--muted)] transition hover:text-[color:var(--accent)]"
+          >
+            Admin
+          </a>
         </div>
       </footer>
 
@@ -411,7 +492,7 @@ export default function Home() {
             />
             <button
               type="button"
-              className="absolute -top-5 right-0 rounded-full border border-white/30 bg-black/70 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white transition hover:border-white/70"
+              className="absolute -top-5 right-0 rounded-full border border-[color:var(--border)] bg-[color:var(--surface)] px-4 py-2 text-xs font-semibold uppercase tracking-widest text-[color:var(--text)] transition hover:border-[color:var(--accent)]/40"
               onClick={() => setIsLightboxOpen(false)}
             >
               Close
