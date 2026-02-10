@@ -70,7 +70,7 @@ export default function InventoryGrid({ category, subcategory }) {
       {filtered.map((item) => (
         <div
           key={item.id}
-          className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
+          className={`rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4 shadow-[0_8px_24px_rgba(0,0,0,0.06)]${item.inStock === false ? " opacity-60" : ""}`}
         >
           {item.image ? (
             <img
@@ -85,7 +85,7 @@ export default function InventoryGrid({ category, subcategory }) {
           )}
           <div className="mt-4">
             <p className="font-semibold">{item.name}</p>
-            <div className="mt-1 flex items-center gap-2">
+            <div className="mt-1 flex flex-wrap items-center gap-2">
               {item.price && (
                 <span className="text-sm font-medium text-[color:var(--accent)]">
                   ${parseFloat(item.price).toFixed(2)}
@@ -96,6 +96,15 @@ export default function InventoryGrid({ category, subcategory }) {
                   {formatSubcategory(item.subcategory)}
                 </span>
               )}
+              <span
+                className={`ml-auto rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider ${
+                  item.inStock === false
+                    ? "bg-rose-500/10 text-rose-600"
+                    : "bg-emerald-500/10 text-emerald-600"
+                }`}
+              >
+                {item.inStock === false ? "Out of stock" : "In stock"}
+              </span>
             </div>
           </div>
         </div>
