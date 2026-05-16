@@ -128,7 +128,7 @@ export default function PhotoGallery() {
   return (
     <>
 
-      <div className="mt-6 mx-auto max-w-5xl">
+      <div className="mt-6 mx-auto w-full max-w-5xl px-3 sm:px-0">
         <article
           className="overflow-hidden rounded-2xl border border-(--border) bg-(--surface) shadow-[0_24px_60px_-20px_rgb(0_0_0/0.35)] ring-1 ring-black/8"
           aria-roledescription="carousel"
