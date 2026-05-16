@@ -37,6 +37,19 @@ Verified bottle photos: Absolut, Seagram's, Maker's Mark, Grey Goose, Canadian C
 
 To add your own bottle photos, place files in `public/products/{slug}.jpg` and reference them in the catalog (or re-run the image script after wiring local paths).
 
+## Live chat (Tawk.to)
+
+The floating chat button is implemented in `src/components/TawkTo.jsx` and only loads when **both** are set:
+
+- `NEXT_PUBLIC_TAWK_PROPERTY_ID`
+- `NEXT_PUBLIC_TAWK_WIDGET_ID`
+
+Copy them from your Tawk embed URL: `https://embed.tawk.to/PROPERTY_ID/WIDGET_ID` (same workflow as on other sites such as [Cloud Crust CE](https://ce.cloudcrustllc.com/) if you use the **same** Tawk property). Put the values in `.env.local` locally and in **Vercel → Project → Settings → Environment Variables** for production, then **redeploy** (public env vars are embedded at build time).
+
+If the widget does not appear, open the browser dev console: in development you will see a warning when these variables are missing.
+
+**Messages to a phone:** Incoming chats are delivered through the **Tawk.to mobile app** and notification settings in the Tawk dashboard for each agent—not through this codebase. Install the tawk.to app, sign in as an agent, and turn on push notifications for new conversations.
+
 ## Development
 
 ```bash

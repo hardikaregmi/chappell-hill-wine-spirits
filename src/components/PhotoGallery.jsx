@@ -127,10 +127,6 @@ export default function PhotoGallery() {
 
   return (
     <>
-      <p className="sr-only">
-        Image gallery with {len} photos. Swipe or use arrows to browse; open
-        a photo for full screen.
-      </p>
 
       <div className="mt-6 mx-auto max-w-5xl">
         <article

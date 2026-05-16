@@ -37,10 +37,7 @@ export default function CategoryPicker({ items }) {
         <h2 className="font-display text-3xl font-semibold text-[color:var(--text)] md:text-4xl">
           Our selection
         </h2>
-        <p className="mt-2 text-sm text-[color:var(--muted)]">
-          {items.length} items in the catalog — visit in store for availability
-          and sizes in stock.
-        </p>
+        
       </div>
 
       {!active && (

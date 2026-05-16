@@ -5,36 +5,44 @@ export const INVENTORY_CATEGORIES = [
     "label": "Vodka"
   },
   {
-    "slug": "whiskey",
-    "label": "Whiskey"
-  },
-  {
-    "slug": "wine",
-    "label": "Wine"
-  },
-  {
-    "slug": "tequila",
-    "label": "Tequila"
-  },
-  {
-    "slug": "margarita",
-    "label": "Margarita"
+    "slug": "gin",
+    "label": "Gin"
   },
   {
     "slug": "rum",
     "label": "Rum"
   },
   {
-    "slug": "gin",
-    "label": "Gin"
+    "slug": "tequila",
+    "label": "Tequila"
+  },
+  {
+    "slug": "whiskey",
+    "label": "Whiskey"
+  },
+  {
+    "slug": "brandy",
+    "label": "Brandy"
+  },
+  {
+    "slug": "cognac",
+    "label": "Cognac"
   },
   {
     "slug": "liqueurs",
     "label": "Liqueurs"
   },
   {
-    "slug": "brandy",
-    "label": "Brandy"
+    "slug": "margarita",
+    "label": "Margarita"
+  },
+  {
+    "slug": "champagne",
+    "label": "Champagne & sparkling"
+  },
+  {
+    "slug": "wine",
+    "label": "Wine"
   }
 ];
 
@@ -45,10 +53,207 @@ export const INVENTORY_SUBCATEGORY_LABELS = {
   "chardonnay": "Chardonnay",
   "moscato": "Moscato",
   "merlot": "Merlot",
-  "sauvignon-blanc": "Sauvignon Blanc"
+  "sauvignon-blanc": "Sauvignon Blanc",
+  "rose": "Rosé"
 };
 
 export const INVENTORY_PRODUCTS = [
+  {
+    "slug": "absolut-vodka",
+    "name": "Absolut Vodka",
+    "category": "vodka",
+    "brand": "Absolut",
+    "searchTerms": "Absolut Vodka"
+  },
+  {
+    "slug": "burnett-s-vodka",
+    "name": "Burnett'S Vodka",
+    "category": "vodka",
+    "brand": "Burnett's",
+    "searchTerms": "Burnett'S Vodka"
+  },
+  {
+    "slug": "crown-russe-vodka",
+    "name": "Crown Russe Vodka",
+    "category": "vodka",
+    "brand": "Crown Russe",
+    "searchTerms": "Crown Russe Vodka"
+  },
+  {
+    "slug": "grey-goose-vodka",
+    "name": "Grey Goose Vodka",
+    "category": "vodka",
+    "brand": "Grey Goose",
+    "searchTerms": "Grey Goose Vodka"
+  },
+  {
+    "slug": "ketel-one-vodka",
+    "name": "Ketel One Vodka",
+    "category": "vodka",
+    "brand": "Ketel One",
+    "searchTerms": "Ketel One Vodka"
+  },
+  {
+    "slug": "new-amsterdam-apple",
+    "name": "New Amsterdam Apple",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Apple"
+  },
+  {
+    "slug": "new-amsterdam-coconut",
+    "name": "New Amsterdam Coconut",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Coconut"
+  },
+  {
+    "slug": "new-amsterdam-peach",
+    "name": "New Amsterdam Peach",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Peach"
+  },
+  {
+    "slug": "new-amsterdam-pineapple",
+    "name": "New Amsterdam Pineapple",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Pineapple"
+  },
+  {
+    "slug": "new-amsterdam-pink-whitney",
+    "name": "New Amsterdam Pink Whitney",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Pink Whitney"
+  },
+  {
+    "slug": "new-amsterdam-red-berry",
+    "name": "New Amsterdam Red Berry",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Red Berry"
+  },
+  {
+    "slug": "new-amsterdam-vodka",
+    "name": "New Amsterdam Vodka",
+    "category": "vodka",
+    "brand": "New Amsterdam",
+    "searchTerms": "New Amsterdam Vodka"
+  },
+  {
+    "slug": "platinum-10x-vodka",
+    "name": "Platinum 10x Vodka",
+    "category": "vodka",
+    "brand": "Platinum",
+    "searchTerms": "Platinum 10x Vodka"
+  },
+  {
+    "slug": "platinum-7x-vodka",
+    "name": "Platinum 7x Vodka",
+    "category": "vodka",
+    "brand": "Platinum",
+    "searchTerms": "Platinum 7x Vodka"
+  },
+  {
+    "slug": "skyy-vodka",
+    "name": "Skyy Vodka",
+    "category": "vodka",
+    "brand": "Skyy",
+    "searchTerms": "Skyy Vodka"
+  },
+  {
+    "slug": "taaka-vodka",
+    "name": "Taaka Vodka",
+    "category": "vodka",
+    "brand": "Taaka",
+    "searchTerms": "Taaka Vodka"
+  },
+  {
+    "slug": "tito-s-vodka",
+    "name": "Tito'S Vodka",
+    "category": "vodka",
+    "brand": "Tito'S Vodka",
+    "searchTerms": "Tito'S Vodka"
+  },
+  {
+    "slug": "aviation-american-gin",
+    "name": "Aviation American Gin",
+    "category": "gin",
+    "brand": "Aviation",
+    "searchTerms": "Aviation American Gin"
+  },
+  {
+    "slug": "bombay-sapphire-gin",
+    "name": "Bombay Sapphire Gin",
+    "category": "gin",
+    "brand": "Bombay Sapphire",
+    "searchTerms": "Bombay Sapphire Gin"
+  },
+  {
+    "slug": "seagram-s-gin",
+    "name": "Seagram'S Gin",
+    "category": "gin",
+    "brand": "Seagram's",
+    "searchTerms": "Seagram'S Gin"
+  },
+  {
+    "slug": "tanqueray-london-dry-gin",
+    "name": "Tanqueray London Dry Gin",
+    "category": "gin",
+    "brand": "Tanqueray",
+    "searchTerms": "Tanqueray London Dry Gin"
+  },
+  {
+    "slug": "bacardi-white-rum",
+    "name": "Bacardi White Rum",
+    "category": "rum",
+    "brand": "Bacardi",
+    "searchTerms": "Bacardi White Rum"
+  },
+  {
+    "slug": "bumbu-the-original-rum",
+    "name": "Bumbu The Original Rum",
+    "category": "rum",
+    "brand": "Bumbu",
+    "searchTerms": "Bumbu The Original Rum"
+  },
+  {
+    "slug": "malibu-peach",
+    "name": "Malibu Peach",
+    "category": "rum",
+    "brand": "Malibu",
+    "searchTerms": "Malibu Peach"
+  },
+  {
+    "slug": "malibu-pineapple",
+    "name": "Malibu Pineapple",
+    "category": "rum",
+    "brand": "Malibu",
+    "searchTerms": "Malibu Pineapple"
+  },
+  {
+    "slug": "malibu-strawberry",
+    "name": "Malibu Strawberry",
+    "category": "rum",
+    "brand": "Malibu",
+    "searchTerms": "Malibu Strawberry"
+  },
+  {
+    "slug": "rumchata",
+    "name": "Rumchata",
+    "category": "rum",
+    "brand": "RumChata",
+    "searchTerms": "Rumchata"
+  },
+  {
+    "slug": "the-kraken-black-spiced-rum",
+    "name": "The Kraken Black Spiced Rum",
+    "category": "rum",
+    "brand": "The Kraken",
+    "searchTerms": "The Kraken Black Spiced Rum"
+  },
   {
     "slug": "1800-blanco-tequila",
     "name": "1800 Blanco Tequila",
@@ -69,6 +274,391 @@ export const INVENTORY_PRODUCTS = [
     "category": "tequila",
     "brand": "1800",
     "searchTerms": "1800 Reposado Tequila"
+  },
+  {
+    "slug": "aristocrat-tequila",
+    "name": "Aristocrat Tequila",
+    "category": "tequila",
+    "brand": "Aristocrat",
+    "searchTerms": "Aristocrat Tequila"
+  },
+  {
+    "slug": "camarena-reposado-tequila",
+    "name": "Camarena Reposado Tequila",
+    "category": "tequila",
+    "brand": "Camarena",
+    "searchTerms": "Camarena Reposado Tequila"
+  },
+  {
+    "slug": "casamigos-blanco-tequila",
+    "name": "Casamigos Blanco Tequila",
+    "category": "tequila",
+    "brand": "Casamigos",
+    "searchTerms": "Casamigos Blanco Tequila"
+  },
+  {
+    "slug": "espolon-blanco-tequila",
+    "name": "Espolon Blanco Tequila",
+    "category": "tequila",
+    "brand": "ESPOLON",
+    "searchTerms": "Espolon Blanco Tequila"
+  },
+  {
+    "slug": "espolon-reposado-tequila",
+    "name": "Espolon Reposado Tequila",
+    "category": "tequila",
+    "brand": "ESPOLON",
+    "searchTerms": "Espolon Reposado Tequila"
+  },
+  {
+    "slug": "jose-cuervo-especial",
+    "name": "Jose Cuervo Especial",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial"
+  },
+  {
+    "slug": "jose-cuervo-especial-gold-tequila",
+    "name": "Jose Cuervo Especial Gold Tequila",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Gold Tequila"
+  },
+  {
+    "slug": "jose-cuervo-especial-silver",
+    "name": "Jose Cuervo Especial Silver",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Silver"
+  },
+  {
+    "slug": "jose-cuervo-especial-silver-2",
+    "name": "Jose Cuervo Especial Si̇Lver",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Si̇Lver"
+  },
+  {
+    "slug": "jose-cuervo-especial-silver-teq",
+    "name": "Jose Cuervo Especial Si̇Lver Teq",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Si̇Lver Teq"
+  },
+  {
+    "slug": "jose-cuervo-especial-tequila",
+    "name": "Jose Cuervo Especial Tequila",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Tequila"
+  },
+  {
+    "slug": "jose-cuervo-especial-tequila-gold",
+    "name": "Jose Cuervo Especial Tequila Gold",
+    "category": "tequila",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Especial Tequila Gold"
+  },
+  {
+    "slug": "lunazul-blanco-tequila",
+    "name": "Lunazul Blanco Tequila",
+    "category": "tequila",
+    "brand": "LUNAZUL",
+    "searchTerms": "Lunazul Blanco Tequila"
+  },
+  {
+    "slug": "lunazul-reposado-tequila",
+    "name": "Lunazul Reposado Tequila",
+    "category": "tequila",
+    "brand": "LUNAZUL",
+    "searchTerms": "Lunazul Reposado Tequila"
+  },
+  {
+    "slug": "montezuma-silver-tequila",
+    "name": "Montezuma Silver Tequila",
+    "category": "tequila",
+    "brand": "Montezuma",
+    "searchTerms": "Montezuma Silver Tequila"
+  },
+  {
+    "slug": "patron-silver-tequila",
+    "name": "Patron Si̇Lver Tequila",
+    "category": "tequila",
+    "brand": "PATRON",
+    "searchTerms": "Patron Si̇Lver Tequila"
+  },
+  {
+    "slug": "teremana-blanco-tequila",
+    "name": "Teremana Blanco Tequila",
+    "category": "tequila",
+    "brand": "Teremana",
+    "searchTerms": "Teremana Blanco Tequila"
+  },
+  {
+    "slug": "two-fingers-tequila",
+    "name": "Two Fingers Tequila",
+    "category": "tequila",
+    "brand": "Two Fingers Tequila",
+    "searchTerms": "Two Fingers Tequila"
+  },
+  {
+    "slug": "bulleit-bourbon",
+    "name": "Bulleit Bourbon",
+    "category": "whiskey",
+    "brand": "Bulleit",
+    "searchTerms": "Bulleit Bourbon"
+  },
+  {
+    "slug": "canadian-club",
+    "name": "Canadian Club",
+    "category": "whiskey",
+    "brand": "Canadian Club",
+    "searchTerms": "Canadian Club"
+  },
+  {
+    "slug": "canadian-hunter",
+    "name": "Canadian Hunter",
+    "category": "whiskey",
+    "brand": "Canadian Hunter",
+    "searchTerms": "Canadian Hunter"
+  },
+  {
+    "slug": "canadian-mist",
+    "name": "Canadian Mist",
+    "category": "whiskey",
+    "brand": "Canadian Mist",
+    "searchTerms": "Canadian Mist"
+  },
+  {
+    "slug": "crown-royal",
+    "name": "Crown Royal",
+    "category": "whiskey",
+    "brand": "Crown Royal",
+    "searchTerms": "Crown Royal"
+  },
+  {
+    "slug": "crown-royal-apple",
+    "name": "Crown Royal Apple",
+    "category": "whiskey",
+    "brand": "Crown Royal",
+    "searchTerms": "Crown Royal Apple"
+  },
+  {
+    "slug": "crown-royal-blackberry",
+    "name": "Crown Royal Blackberry",
+    "category": "whiskey",
+    "brand": "Crown Royal",
+    "searchTerms": "Crown Royal Blackberry"
+  },
+  {
+    "slug": "crown-royal-peach",
+    "name": "Crown Royal Peach",
+    "category": "whiskey",
+    "brand": "Crown Royal",
+    "searchTerms": "Crown Royal Peach"
+  },
+  {
+    "slug": "crown-royal-vanilla",
+    "name": "Crown Royal Vanilla",
+    "category": "whiskey",
+    "brand": "Crown Royal",
+    "searchTerms": "Crown Royal Vanilla"
+  },
+  {
+    "slug": "elijah-craig-small-batch-bourbon",
+    "name": "Elijah Craig Small Batch Bourbon",
+    "category": "whiskey",
+    "brand": "Elijah Craig",
+    "searchTerms": "Elijah Craig Small Batch Bourbon"
+  },
+  {
+    "slug": "evan-williams-1783",
+    "name": "Evan Williams 1783",
+    "category": "whiskey",
+    "brand": "Evan Williams",
+    "searchTerms": "Evan Williams 1783"
+  },
+  {
+    "slug": "evan-williams-apple",
+    "name": "Evan Williams Apple",
+    "category": "whiskey",
+    "brand": "Evan Williams",
+    "searchTerms": "Evan Williams Apple"
+  },
+  {
+    "slug": "evan-williams-black-label",
+    "name": "Evan Williams Black Label",
+    "category": "whiskey",
+    "brand": "Evan Williams",
+    "searchTerms": "Evan Williams Black Label"
+  },
+  {
+    "slug": "evan-williams-peach",
+    "name": "Evan Williams Peach",
+    "category": "whiskey",
+    "brand": "Evan Williams",
+    "searchTerms": "Evan Williams Peach"
+  },
+  {
+    "slug": "fireball",
+    "name": "Fireball",
+    "category": "whiskey",
+    "brand": "Fireball",
+    "searchTerms": "Fireball"
+  },
+  {
+    "slug": "four-roses-small-batch-bourbon",
+    "name": "Four Roses Small Batch Bourbon",
+    "category": "whiskey",
+    "brand": "Four Roses",
+    "searchTerms": "Four Roses Small Batch Bourbon"
+  },
+  {
+    "slug": "jack-daniels-apple",
+    "name": "Jack Daniels Apple",
+    "category": "whiskey",
+    "brand": "Jack Daniels",
+    "searchTerms": "Jack Daniels Apple"
+  },
+  {
+    "slug": "jack-daniels-black-label",
+    "name": "Jack Daniels Black Label",
+    "category": "whiskey",
+    "brand": "Jack Daniels",
+    "searchTerms": "Jack Daniels Black Label"
+  },
+  {
+    "slug": "jack-daniels-blackberry",
+    "name": "Jack Daniels Blackberry",
+    "category": "whiskey",
+    "brand": "Jack Daniels",
+    "searchTerms": "Jack Daniels Blackberry"
+  },
+  {
+    "slug": "jack-daniels-fire",
+    "name": "Jack Daniels Fire",
+    "category": "whiskey",
+    "brand": "Jack Daniels",
+    "searchTerms": "Jack Daniels Fire"
+  },
+  {
+    "slug": "jack-daniels-honey",
+    "name": "Jack Daniels Honey",
+    "category": "whiskey",
+    "brand": "Jack Daniels",
+    "searchTerms": "Jack Daniels Honey"
+  },
+  {
+    "slug": "jim-beam",
+    "name": "Jim Beam",
+    "category": "whiskey",
+    "brand": "Jim Beam",
+    "searchTerms": "Jim Beam"
+  },
+  {
+    "slug": "maker-s-mark",
+    "name": "Maker'S Mark",
+    "category": "whiskey",
+    "brand": "Maker's Mark",
+    "searchTerms": "Maker'S Mark"
+  },
+  {
+    "slug": "maker-s-mark-46",
+    "name": "Maker'S Mark 46",
+    "category": "whiskey",
+    "brand": "Maker's Mark",
+    "searchTerms": "Maker'S Mark 46"
+  },
+  {
+    "slug": "quality-house-whiskey",
+    "name": "Quality House Whiskey",
+    "category": "whiskey",
+    "brand": "Quality House",
+    "searchTerms": "Quality House Whiskey"
+  },
+  {
+    "slug": "r-r",
+    "name": "R & R",
+    "category": "whiskey",
+    "brand": "R & R",
+    "searchTerms": "R & R"
+  },
+  {
+    "slug": "r-r-reserve",
+    "name": "R & R Reserve",
+    "category": "whiskey",
+    "brand": "R & R",
+    "searchTerms": "R & R Reserve"
+  },
+  {
+    "slug": "traveller-whiskey",
+    "name": "Traveller Whiskey",
+    "category": "whiskey",
+    "brand": "Traveller",
+    "searchTerms": "Traveller Whiskey"
+  },
+  {
+    "slug": "woodford-reserve-bourbon",
+    "name": "Woodford Reserve Bourbon",
+    "category": "whiskey",
+    "brand": "Woodford Reserve",
+    "searchTerms": "Woodford Reserve Bourbon"
+  },
+  {
+    "slug": "e-j",
+    "name": "E & J",
+    "category": "brandy",
+    "brand": "E & J",
+    "searchTerms": "E & J"
+  },
+  {
+    "slug": "e-j-vsop",
+    "name": "E & J VSOP",
+    "category": "brandy",
+    "brand": "E & J",
+    "searchTerms": "E & J VSOP"
+  },
+  {
+    "slug": "paul-masson",
+    "name": "Paul Masson",
+    "category": "brandy",
+    "brand": "Paul Masson",
+    "searchTerms": "Paul Masson"
+  },
+  {
+    "slug": "paul-masson-peach",
+    "name": "Paul Masson Peach",
+    "category": "brandy",
+    "brand": "Paul Masson",
+    "searchTerms": "Paul Masson Peach"
+  },
+  {
+    "slug": "d-usse",
+    "name": "D'Ussé",
+    "category": "cognac",
+    "brand": "D'Ussé",
+    "searchTerms": "D'Ussé"
+  },
+  {
+    "slug": "hennessy",
+    "name": "Hennessy",
+    "category": "cognac",
+    "brand": "Hennessy",
+    "searchTerms": "Hennessy"
+  },
+  {
+    "slug": "remy-martin",
+    "name": "Rémy Martin",
+    "category": "cognac",
+    "brand": "Rémy Martin",
+    "searchTerms": "Rémy Martin"
+  },
+  {
+    "slug": "remy-martin-1738",
+    "name": "Rémy Martin 1738",
+    "category": "cognac",
+    "brand": "Rémy Martin",
+    "searchTerms": "Rémy Martin 1738"
   },
   {
     "slug": "99-brand-blue-raspberries",
@@ -190,18 +780,47 @@ export const INVENTORY_PRODUCTS = [
     "searchTerms": "99 Brand Xxpresso"
   },
   {
-    "slug": "absolut-vodka",
-    "name": "Absolut Vodka",
-    "category": "vodka",
-    "brand": "Absolut",
-    "searchTerms": "Absolut Vodka"
+    "slug": "jose-cuervo-lime-margarita",
+    "name": "Jose Cuervo Lime Margarita",
+    "category": "margarita",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Lime Margarita"
   },
   {
-    "slug": "bacardi-white-rum",
-    "name": "Bacardi White Rum",
-    "category": "rum",
-    "brand": "Bacardi",
-    "searchTerms": "Bacardi White Rum"
+    "slug": "jose-cuervo-strawberry-margarita",
+    "name": "Jose Cuervo Strawberry Margarita",
+    "category": "margarita",
+    "brand": "JOSE CUERVO",
+    "searchTerms": "Jose Cuervo Strawberry Margarita"
+  },
+  {
+    "slug": "andre-brut-champagne",
+    "name": "André Brut Champagne",
+    "category": "champagne",
+    "brand": "André",
+    "searchTerms": "André Brut Champagne"
+  },
+  {
+    "slug": "cook-s-spumante",
+    "name": "Cook's Spumante",
+    "category": "champagne",
+    "brand": "Cook's",
+    "searchTerms": "Cook's Spumante"
+  },
+  {
+    "slug": "korbel-brut-champagne",
+    "name": "Korbel Brut Champagne",
+    "category": "champagne",
+    "brand": "Korbel",
+    "searchTerms": "Korbel Brut Champagne"
+  },
+  {
+    "slug": "la-marca-prosecco-rose",
+    "name": "La Marca Prosecco Rosé",
+    "category": "champagne",
+    "brand": "La Marca",
+    "searchTerms": "La Marca Prosecco Rosé",
+    "subcategory": "rose"
   },
   {
     "slug": "barefoot-cabernet-sauvignon",
@@ -315,6 +934,14 @@ export const INVENTORY_PRODUCTS = [
     "searchTerms": "Barefoot Rich Red Blend California"
   },
   {
+    "slug": "barefoot-rose",
+    "name": "Barefoot Rosé",
+    "category": "wine",
+    "brand": "BAREFOOT",
+    "searchTerms": "Barefoot Rosé",
+    "subcategory": "rose"
+  },
+  {
     "slug": "barefoot-sangria",
     "name": "Barefoot Sangria",
     "category": "wine",
@@ -422,13 +1049,6 @@ export const INVENTORY_PRODUCTS = [
     "subcategory": "sauvignon-blanc"
   },
   {
-    "slug": "burnett-s-vodka",
-    "name": "Burnett'S Vodka",
-    "category": "vodka",
-    "brand": "Burnett's",
-    "searchTerms": "Burnett'S Vodka"
-  },
-  {
     "slug": "california-barefoot-riesling",
     "name": "California Barefoot Riesling",
     "category": "wine",
@@ -436,67 +1056,19 @@ export const INVENTORY_PRODUCTS = [
     "searchTerms": "California Barefoot Riesling"
   },
   {
-    "slug": "canadian-club",
-    "name": "Canadian Club",
-    "category": "whiskey",
-    "brand": "Canadian Club",
-    "searchTerms": "Canadian Club"
+    "slug": "carlo-rossi-sweet-red",
+    "name": "Carlo Rossi Sweet Red",
+    "category": "wine",
+    "brand": "Carlo Rossi",
+    "searchTerms": "Carlo Rossi Sweet Red"
   },
   {
-    "slug": "canadian-hunter",
-    "name": "Canadian Hunter",
-    "category": "whiskey",
-    "brand": "Canadian Hunter",
-    "searchTerms": "Canadian Hunter"
-  },
-  {
-    "slug": "canadian-mist",
-    "name": "Canadian Mist",
-    "category": "whiskey",
-    "brand": "Canadian Mist",
-    "searchTerms": "Canadian Mist"
-  },
-  {
-    "slug": "crown-royal",
-    "name": "Crown Royal",
-    "category": "whiskey",
-    "brand": "Crown Royal",
-    "searchTerms": "Crown Royal"
-  },
-  {
-    "slug": "crown-royal-apple",
-    "name": "Crown Royal Apple",
-    "category": "whiskey",
-    "brand": "Crown Royal",
-    "searchTerms": "Crown Royal Apple"
-  },
-  {
-    "slug": "crown-royal-blackberry",
-    "name": "Crown Royal Blackberry",
-    "category": "whiskey",
-    "brand": "Crown Royal",
-    "searchTerms": "Crown Royal Blackberry"
-  },
-  {
-    "slug": "crown-royal-peach",
-    "name": "Crown Royal Peach",
-    "category": "whiskey",
-    "brand": "Crown Royal",
-    "searchTerms": "Crown Royal Peach"
-  },
-  {
-    "slug": "crown-royal-vanilla",
-    "name": "Crown Royal Vanilla",
-    "category": "whiskey",
-    "brand": "Crown Royal",
-    "searchTerms": "Crown Royal Vanilla"
-  },
-  {
-    "slug": "crown-russe-vodka",
-    "name": "Crown Russe Vodka",
-    "category": "vodka",
-    "brand": "Crown Russe",
-    "searchTerms": "Crown Russe Vodka"
+    "slug": "castello-del-poggio-moscato",
+    "name": "Castello Del Poggio Moscato",
+    "category": "wine",
+    "brand": "Castello del Poggio",
+    "searchTerms": "Castello Del Poggio Moscato",
+    "subcategory": "moscato"
   },
   {
     "slug": "dark-horse-buttery-chardonnay",
@@ -527,7 +1099,8 @@ export const INVENTORY_PRODUCTS = [
     "name": "Dark Horse Rose California",
     "category": "wine",
     "brand": "DARK HORSE",
-    "searchTerms": "Dark Horse Rose California"
+    "searchTerms": "Dark Horse Rose California",
+    "subcategory": "rose"
   },
   {
     "slug": "dark-horse-sauvignon-blanc",
@@ -536,55 +1109,6 @@ export const INVENTORY_PRODUCTS = [
     "brand": "DARK HORSE",
     "searchTerms": "Dark Horse Sauvignon Blanc",
     "subcategory": "sauvignon-blanc"
-  },
-  {
-    "slug": "espolon-blanco-tequila",
-    "name": "Espolon Blanco Tequila",
-    "category": "tequila",
-    "brand": "ESPOLON",
-    "searchTerms": "Espolon Blanco Tequila"
-  },
-  {
-    "slug": "espolon-reposado-tequila",
-    "name": "Espolon Reposado Tequila",
-    "category": "tequila",
-    "brand": "ESPOLON",
-    "searchTerms": "Espolon Reposado Tequila"
-  },
-  {
-    "slug": "evan-williams-1783",
-    "name": "Evan Williams 1783",
-    "category": "whiskey",
-    "brand": "Evan Williams",
-    "searchTerms": "Evan Williams 1783"
-  },
-  {
-    "slug": "evan-williams-apple",
-    "name": "Evan Williams Apple",
-    "category": "whiskey",
-    "brand": "Evan Williams",
-    "searchTerms": "Evan Williams Apple"
-  },
-  {
-    "slug": "evan-williams-black-label",
-    "name": "Evan Williams Black Label",
-    "category": "whiskey",
-    "brand": "Evan Williams",
-    "searchTerms": "Evan Williams Black Label"
-  },
-  {
-    "slug": "evan-williams-peach",
-    "name": "Evan Williams Peach",
-    "category": "whiskey",
-    "brand": "Evan Williams",
-    "searchTerms": "Evan Williams Peach"
-  },
-  {
-    "slug": "fireball",
-    "name": "Fireball",
-    "category": "whiskey",
-    "brand": "Fireball",
-    "searchTerms": "Fireball"
   },
   {
     "slug": "franza-house-wine-fav-sunset-blush",
@@ -632,118 +1156,6 @@ export const INVENTORY_PRODUCTS = [
     "searchTerms": "Franzia Vintner Select Wh Zinfandel"
   },
   {
-    "slug": "grey-goose-vodka",
-    "name": "Grey Goose Vodka",
-    "category": "vodka",
-    "brand": "Grey Goose",
-    "searchTerms": "Grey Goose Vodka"
-  },
-  {
-    "slug": "jack-daniels-apple",
-    "name": "Jack Daniels Apple",
-    "category": "whiskey",
-    "brand": "Jack Daniels",
-    "searchTerms": "Jack Daniels Apple"
-  },
-  {
-    "slug": "jack-daniels-black-label",
-    "name": "Jack Daniels Black Label",
-    "category": "whiskey",
-    "brand": "Jack Daniels",
-    "searchTerms": "Jack Daniels Black Label"
-  },
-  {
-    "slug": "jack-daniels-blackberry",
-    "name": "Jack Daniels Blackberry",
-    "category": "whiskey",
-    "brand": "Jack Daniels",
-    "searchTerms": "Jack Daniels Blackberry"
-  },
-  {
-    "slug": "jack-daniels-fire",
-    "name": "Jack Daniels Fire",
-    "category": "whiskey",
-    "brand": "Jack Daniels",
-    "searchTerms": "Jack Daniels Fire"
-  },
-  {
-    "slug": "jack-daniels-honey",
-    "name": "Jack Daniels Honey",
-    "category": "whiskey",
-    "brand": "Jack Daniels",
-    "searchTerms": "Jack Daniels Honey"
-  },
-  {
-    "slug": "jim-beam",
-    "name": "Jim Beam",
-    "category": "whiskey",
-    "brand": "Jim Beam",
-    "searchTerms": "Jim Beam"
-  },
-  {
-    "slug": "jose-cuervo-especial",
-    "name": "Jose Cuervo Especial",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial"
-  },
-  {
-    "slug": "jose-cuervo-especial-gold-tequila",
-    "name": "Jose Cuervo Especial Gold Tequila",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Gold Tequila"
-  },
-  {
-    "slug": "jose-cuervo-especial-silver",
-    "name": "Jose Cuervo Especial Silver",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Silver"
-  },
-  {
-    "slug": "jose-cuervo-especial-silver-2",
-    "name": "Jose Cuervo Especial Si̇Lver",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Si̇Lver"
-  },
-  {
-    "slug": "jose-cuervo-especial-silver-teq",
-    "name": "Jose Cuervo Especial Si̇Lver Teq",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Si̇Lver Teq"
-  },
-  {
-    "slug": "jose-cuervo-especial-tequila",
-    "name": "Jose Cuervo Especial Tequila",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Tequila"
-  },
-  {
-    "slug": "jose-cuervo-especial-tequila-gold",
-    "name": "Jose Cuervo Especial Tequila Gold",
-    "category": "tequila",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Especial Tequila Gold"
-  },
-  {
-    "slug": "jose-cuervo-lime-margarita",
-    "name": "Jose Cuervo Lime Margarita",
-    "category": "margarita",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Lime Margarita"
-  },
-  {
-    "slug": "jose-cuervo-strawberry-margarita",
-    "name": "Jose Cuervo Strawberry Margarita",
-    "category": "margarita",
-    "brand": "JOSE CUERVO",
-    "searchTerms": "Jose Cuervo Strawberry Margarita"
-  },
-  {
     "slug": "josh-cellars-chardonnay",
     "name": "Josh Cellars Chardonnay",
     "category": "wine",
@@ -760,166 +1172,20 @@ export const INVENTORY_PRODUCTS = [
     "subcategory": "pinot-grigio"
   },
   {
+    "slug": "josh-cellars-rose",
+    "name": "Josh Cellars Rosé",
+    "category": "wine",
+    "brand": "JOSH CELLARS",
+    "searchTerms": "Josh Cellars Rosé",
+    "subcategory": "rose"
+  },
+  {
     "slug": "josh-cellars-sauvignon-blanc",
     "name": "Josh Cellars Sauvignon Blanc",
     "category": "wine",
     "brand": "JOSH CELLARS",
     "searchTerms": "Josh Cellars Sauvignon Blanc",
     "subcategory": "sauvignon-blanc"
-  },
-  {
-    "slug": "ketel-one-vodka",
-    "name": "Ketel One Vodka",
-    "category": "vodka",
-    "brand": "Ketel One",
-    "searchTerms": "Ketel One Vodka"
-  },
-  {
-    "slug": "lunazul-blanco-tequila",
-    "name": "Lunazul Blanco Tequila",
-    "category": "tequila",
-    "brand": "LUNAZUL",
-    "searchTerms": "Lunazul Blanco Tequila"
-  },
-  {
-    "slug": "lunazul-reposado-tequila",
-    "name": "Lunazul Reposado Tequila",
-    "category": "tequila",
-    "brand": "LUNAZUL",
-    "searchTerms": "Lunazul Reposado Tequila"
-  },
-  {
-    "slug": "maker-s-mark",
-    "name": "Maker'S Mark",
-    "category": "whiskey",
-    "brand": "Maker's Mark",
-    "searchTerms": "Maker'S Mark"
-  },
-  {
-    "slug": "malibu-peach",
-    "name": "Malibu Peach",
-    "category": "rum",
-    "brand": "Malibu",
-    "searchTerms": "Malibu Peach"
-  },
-  {
-    "slug": "malibu-pineapple",
-    "name": "Malibu Pineapple",
-    "category": "rum",
-    "brand": "Malibu",
-    "searchTerms": "Malibu Pineapple"
-  },
-  {
-    "slug": "malibu-strawberry",
-    "name": "Malibu Strawberry",
-    "category": "rum",
-    "brand": "Malibu",
-    "searchTerms": "Malibu Strawberry"
-  },
-  {
-    "slug": "new-amsterdam-apple",
-    "name": "New Amsterdam Apple",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Apple"
-  },
-  {
-    "slug": "new-amsterdam-coconut",
-    "name": "New Amsterdam Coconut",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Coconut"
-  },
-  {
-    "slug": "new-amsterdam-peach",
-    "name": "New Amsterdam Peach",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Peach"
-  },
-  {
-    "slug": "new-amsterdam-pineapple",
-    "name": "New Amsterdam Pineapple",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Pineapple"
-  },
-  {
-    "slug": "new-amsterdam-pink-whitney",
-    "name": "New Amsterdam Pink Whitney",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Pink Whitney"
-  },
-  {
-    "slug": "new-amsterdam-red-berry",
-    "name": "New Amsterdam Red Berry",
-    "category": "whiskey",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Red Berry"
-  },
-  {
-    "slug": "new-amsterdam-vodka",
-    "name": "New Amsterdam Vodka",
-    "category": "vodka",
-    "brand": "New Amsterdam",
-    "searchTerms": "New Amsterdam Vodka"
-  },
-  {
-    "slug": "patron-silver-tequila",
-    "name": "Patron Si̇Lver Tequila",
-    "category": "tequila",
-    "brand": "PATRON",
-    "searchTerms": "Patron Si̇Lver Tequila"
-  },
-  {
-    "slug": "paul-masson",
-    "name": "Paul Masson",
-    "category": "brandy",
-    "brand": "Paul Masson",
-    "searchTerms": "Paul Masson"
-  },
-  {
-    "slug": "platinum-10x-vodka",
-    "name": "Platinum 10x Vodka",
-    "category": "vodka",
-    "brand": "Platinum",
-    "searchTerms": "Platinum 10x Vodka"
-  },
-  {
-    "slug": "platinum-7x-vodka",
-    "name": "Platinum 7x Vodka",
-    "category": "vodka",
-    "brand": "Platinum",
-    "searchTerms": "Platinum 7x Vodka"
-  },
-  {
-    "slug": "quality-house-whiskey",
-    "name": "Quality House Whiskey",
-    "category": "whiskey",
-    "brand": "Quality House",
-    "searchTerms": "Quality House Whiskey"
-  },
-  {
-    "slug": "r-r",
-    "name": "R & R",
-    "category": "whiskey",
-    "brand": "R & R",
-    "searchTerms": "R & R"
-  },
-  {
-    "slug": "r-r-reserve",
-    "name": "R & R Reserve",
-    "category": "whiskey",
-    "brand": "R & R",
-    "searchTerms": "R & R Reserve"
-  },
-  {
-    "slug": "seagram-s-gin",
-    "name": "Seagram'S Gin",
-    "category": "gin",
-    "brand": "Seagram's",
-    "searchTerms": "Seagram'S Gin"
   },
   {
     "slug": "sutter-home-chardonnay",
@@ -962,6 +1228,14 @@ export const INVENTORY_PRODUCTS = [
     "subcategory": "pinot-grigio"
   },
   {
+    "slug": "sutter-home-rose",
+    "name": "Sutter Home Rosé",
+    "category": "wine",
+    "brand": "SUTTER HOME",
+    "searchTerms": "Sutter Home Rosé",
+    "subcategory": "rose"
+  },
+  {
     "slug": "sutter-home-sauvignon-blanc",
     "name": "Sutter Home Sauvignon Blanc",
     "category": "wine",
@@ -982,13 +1256,6 @@ export const INVENTORY_PRODUCTS = [
     "category": "wine",
     "brand": "SUTTER HOME",
     "searchTerms": "Sutter Home White Zinfandel"
-  },
-  {
-    "slug": "taaka-vodka",
-    "name": "Taaka Vodka",
-    "category": "vodka",
-    "brand": "Taaka",
-    "searchTerms": "Taaka Vodka"
   },
   {
     "slug": "tisdale-cabernet",
@@ -1031,13 +1298,6 @@ export const INVENTORY_PRODUCTS = [
     "subcategory": "pinot-noir"
   },
   {
-    "slug": "tito-s-vodka",
-    "name": "Tito'S Vodka",
-    "category": "vodka",
-    "brand": "Tito'S Vodka",
-    "searchTerms": "Tito'S Vodka"
-  },
-  {
     "slug": "woodbridge-chardonnay",
     "name": "Woodbridge Chardonnay",
     "category": "wine",
@@ -1059,6 +1319,14 @@ export const INVENTORY_PRODUCTS = [
     "category": "wine",
     "brand": "WOODBRIDGE",
     "searchTerms": "Woodbridge Red Blend"
+  },
+  {
+    "slug": "woodbridge-rose",
+    "name": "Woodbridge Rosé",
+    "category": "wine",
+    "brand": "WOODBRIDGE",
+    "searchTerms": "Woodbridge Rosé",
+    "subcategory": "rose"
   },
   {
     "slug": "woodbridge-sauvignon-blanc",

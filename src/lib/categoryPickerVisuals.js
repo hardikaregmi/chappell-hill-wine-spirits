@@ -18,6 +18,10 @@ const PICKER_PHOTOS = {
     src: "/products/yellow-tail-jammy-red-roo-1-5.png",
     alt: "Yellow Tail Jammy Red Roo",
   },
+  champagne: {
+    src: "/ingredients/champagne.png",
+    alt: "Champagne & sparkling",
+  },
   tequila: {
     src: "/brands/1800.png",
     alt: "1800 Tequila",
@@ -41,6 +45,10 @@ const PICKER_PHOTOS = {
   brandy: {
     src: "/ingredients/brandy.png",
     alt: "Brandy",
+  },
+  cognac: {
+    src: "/ingredients/brandy.png",
+    alt: "Cognac",
   },
 };
 

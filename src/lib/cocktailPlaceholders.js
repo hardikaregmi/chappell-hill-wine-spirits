@@ -33,6 +33,7 @@ export function placeholderKindForProduct(product) {
   const text = `${slug} ${name || ""}`;
 
   if (category === "wine") {
+    if (subcategory === "rose") return "wineWhite";
     if (subcategory && RED_WINE_SUBS.has(subcategory)) return "wineRed";
     if (subcategory && WHITE_WINE_SUBS.has(subcategory)) return "wineWhite";
     if (RED_WINE_TEXT.test(text)) return "wineRed";
@@ -40,7 +41,13 @@ export function placeholderKindForProduct(product) {
     return "wineRed";
   }
 
-  if (category === "whiskey" || category === "brandy") return "brown";
+  if (category === "champagne") {
+    if (subcategory === "rose") return "wineWhite";
+    return "wineWhite";
+  }
+
+  if (category === "whiskey" || category === "brandy" || category === "cognac")
+    return "brown";
   if (
     category === "vodka" ||
     category === "tequila" ||
