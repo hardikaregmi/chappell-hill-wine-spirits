@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" role="img" aria-label="Red wine glass">
+  <defs>
+    <linearGradient id="wineRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9b1d3a"/>
+      <stop offset="100%" stop-color="#6b1228"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M38 42 C60 18 82 42 80 52 L72 98 C60 118 48 118 36 98 L28 52 Z"
+    fill="url(#wineRed)"
+  />
+  <path
+    d="M38 42 C60 18 82 42 80 52 L72 98 C60 118 48 118 36 98 L28 52 Z"
+    fill="none"
+    stroke="#d4cfc8"
+    stroke-width="2.5"
+  />
+  <rect x="56" y="98" width="8" height="38" rx="1" fill="#d4cfc8"/>
+  <ellipse cx="60" cy="142" rx="24" ry="7" fill="#d4cfc8"/>
+</svg>

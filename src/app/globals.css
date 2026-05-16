@@ -1,19 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f6f1e8;
-  --surface: #fbf8f2;
-  --text: #1f2a33;
-  --muted: #5f6b72;
-  --border: #e6ddcf;
-  --accent: #b8923b;
-  --accent-hover: #a37f2f;
+  /* Facebook / store branding — cream, coral, warm brown & gold */
+  --bg: #f9f7f2;
+  --surface: #fffdfb;
+  --surface-hover: #f3efe8;
+  --text: #2a2420;
+  --muted: #6b5f56;
+  --border: #e8e0d6;
+  --accent: #e85d5d;
+  --accent-hover: #d14a4a;
+  --accent-soft: #f4a5a5;
+  --brown: #3d2b1f;
+  --gold: #c5a059;
+  --on-accent: #ffffff;
+  --header-bg: #e8e5e0;
+  --hero-glow: rgba(232, 93, 93, 0.12);
   --background: var(--bg);
   --foreground: var(--text);
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 @theme inline {
@@ -21,10 +29,31 @@ html {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+}
+
+html,
+body {
+  background-color: #f9f7f2;
+  color: #2a2420;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--text);
+}
+
+/* Photo carousel scroll containment */
+.gallery-carousel-viewport {
+  overscroll-behavior-x: contain;
 }
